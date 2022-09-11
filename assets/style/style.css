@@ -1,0 +1,5 @@
+/* BASIC STYLES HERE */
+input[type=checkbox]:checked+label {
+  color: rgb(94, 0, 0);
+  text-decoration: line-through;
+}
