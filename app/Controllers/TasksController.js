@@ -35,5 +35,9 @@ export class TasksController {
       console.error("deleting task from my controller", error)
     }
   }
+
+  toggleCheckboxToggle(id) {
+    tasksService.toggleCheckboxToggle(id)
+  }
 }
 
