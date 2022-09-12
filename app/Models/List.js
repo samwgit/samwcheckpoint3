@@ -22,7 +22,6 @@ export class List {
           <form onsubmit="app.tasksController.createTask('${this.id}')">
           <input class="fs-6 input-group-text mt-2 bg-secondary" type="text" name="name" minlength="3" maxlength="30" required>
                 <button class="fs-6 btn btn-primary mt-2" type="submit">Add Task</button>
-                ${this.Tasks.length}
                 </form>
                 <button class="btn btn-danger fs-6 mt-2" onclick="app.listsController.removeList('${this.id}')">Delete List</button>
           </div>
