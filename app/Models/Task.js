@@ -15,18 +15,7 @@ export class Task {
     </li>
     `
   }
-
-
-
 }
-
-
-
-
-
-
-
-
   // TODO Must add local storage`
   // TODO Must add the add/remove `tasks
   // TODO Lists have a toggle complete/incomplete checkbox that modifies the numerical value attached in the header

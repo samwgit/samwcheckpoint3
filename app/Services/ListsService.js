@@ -13,7 +13,7 @@ class ListsService {
 
   removeList(id) {
     console.log("list delete attempt (service)")
-    let blister = appState.lists.filter(list => list.id == id)
+    let blister = appState.lists.filter(list => list.id !== id)
     appState.lists = blister
     saveState('lists', appState.lists)
   }

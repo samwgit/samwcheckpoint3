@@ -17,6 +17,7 @@ class TasksService {
     let blister = appState.tasks.filter(task => task.id !== id)
     appState.tasks = blister
     saveState('tasks', appState.tasks)
+    console.log
   }
 }
 

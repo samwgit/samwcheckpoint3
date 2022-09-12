@@ -18,6 +18,7 @@ export class TasksController {
       const form = window.event.target
       let formData = getFormData(form)
       console.log(formData);
+      // @ts-ignore
       formData.listId = listId
       tasksService.createTask(formData)
       // @ts-ignore

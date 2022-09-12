@@ -21,7 +21,7 @@ export class List {
         <div id="list-${this.id}">${this.TaskTemplates}</div>
           </ul>
           <form onsubmit="app.tasksController.createTask('${this.id}')">
-          <input class="fs-6 input-group-text mt-2 bg-secondary" type="text" name="name" minlength="3" maxlength="15" required>
+          <input class="fs-6 input-group-text mt-2 bg-secondary" type="text" name="name" minlength="3" maxlength="15" required checked="false">
                 <button class="fs-6 btn btn-primary mt-2" type="submit">Add Task</button>
                 ${this.Tasks.length}
                 </form>
@@ -36,7 +36,6 @@ export class List {
     return tasks
   }
 
-
   // FIXME This is where I want the template to superimpose, line 21 where its supposed to interpolate
   get TaskTemplates() {
     let Template = ''
@@ -44,3 +43,5 @@ export class List {
     return Template
   }
 }
+
+

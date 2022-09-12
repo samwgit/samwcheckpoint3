@@ -15,7 +15,7 @@ function _drawLists() {
 
   appState.lists.forEach(l => {
     const tasksHtml = l.TaskTemplates
-    setHTML('list-' +  l.id, tasksHtml)
+    setHTML('list-' + l.id, tasksHtml)
   })
 }
 
