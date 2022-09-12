@@ -35,7 +35,6 @@ export class List {
     return tasks
   }
 
-  // FIXME This is where I want the template to superimpose, line 21 where its supposed to interpolate
   get TaskTemplates() {
     let Template = ''
     this.Tasks.forEach(task => Template += task.Template)
