@@ -17,6 +17,9 @@ class ListsService {
     appState.lists = blister
     saveState('lists', appState.lists)
   }
+
+
 }
+
 
 export const listsService = new ListsService()

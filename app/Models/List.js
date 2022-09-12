@@ -3,12 +3,11 @@ import { generateId } from "../Utils/generateId.js";
 import { TasksController } from "../Controllers/TasksController.js";
 import { Task } from "../Models/Task.js";
 import { tasksService } from "../Services/TasksService.js";
-
 export class List {
   constructor(data) {
     this.title = data.title
     this.id = data.id || generateId()
-    this.hcolor = data.hcolor
+    this.hcolor = data.hcolor;
   }
 
 
@@ -21,7 +20,7 @@ export class List {
         <div id="list-${this.id}">${this.TaskTemplates}</div>
           </ul>
           <form onsubmit="app.tasksController.createTask('${this.id}')">
-          <input class="fs-6 input-group-text mt-2 bg-secondary" type="text" name="name" minlength="3" maxlength="15" required checked="false">
+          <input class="fs-6 input-group-text mt-2 bg-secondary" type="text" name="name" minlength="3" maxlength="30" required>
                 <button class="fs-6 btn btn-primary mt-2" type="submit">Add Task</button>
                 ${this.Tasks.length}
                 </form>
@@ -42,6 +41,11 @@ export class List {
     this.Tasks.forEach(task => Template += task.Template)
     return Template
   }
+
+
 }
+
+
+
 
 

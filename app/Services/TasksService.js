@@ -1,7 +1,6 @@
 import { appState } from "../AppState.js";
 import { Task } from "../Models/Task.js";
 import { saveState } from "../Utils/Store.js";
-
 class TasksService {
   createTask(formData) {
     console.log("task create attempt (service)")
@@ -10,6 +9,7 @@ class TasksService {
     console.log(appState.tasks);
     // FIXME Enable this after testing
     saveState('tasks', appState.tasks)
+    const checkbox = document.getElementById('toggle-me');
   }
 
   removeTask(id) {
@@ -20,5 +20,7 @@ class TasksService {
     console.log
   }
 }
+
+
 
 export const tasksService = new TasksService()

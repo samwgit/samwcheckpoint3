@@ -14,8 +14,6 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Task').Task[]} */
   // FIXME Eventually implement load state after testing
   tasks = loadState('tasks', Task)
-
-
 }
 
 export const appState = new Proxy(new AppState(), {
